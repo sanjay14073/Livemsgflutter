@@ -76,7 +76,8 @@ socket.on("update",async()=>{
     }
 })
 })
+// Replace your IP address.Note if port 3000 is blocked then change the port any change here should also be reflected to the socketclient.dart file in the frontend  part
 
-server.listen(3000,"192.168.1.40",(req,res)=>{
+server.listen(3000,"0.0.0.0",(req,res)=>{
     console.log(`The server started at port 3000`);
 })
